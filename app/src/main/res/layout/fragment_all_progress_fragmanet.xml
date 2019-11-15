@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.lexnarro.fragment.MyCategoryFragment">
+
+
+    <ProgressBar
+    android:id="@+id/progress"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:max="100"
+    android:progress="0"
+    android:progressDrawable="@drawable/style_circular"
+    android:secondaryProgress="100" />
+    <!--<com.LexNarro.util.CircularSeekBar-->
+        <!--android:id="@+id/circularSeekBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+      <!--/>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:weightSum="4"
+        android:id="@+id/circular_child"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_40" />
+
+        <TextView
+            android:id="@+id/txt_unit_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:id="@+id/courses"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp_10">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/grey_roundborder"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/txt_cat_completed"
+            android:paddingEnd="@dimen/dp_15"
+            android:paddingStart="@dimen/dp_15"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+
+</RelativeLayout>

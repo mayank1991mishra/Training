@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:layout_gravity="bottom"
+        android:title="@string/my_details">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/profile"
+                android:title="@string/my_profile" />
+            <item
+                android:id="@+id/record"
+                android:icon="@drawable/record"
+                android:title="@string/my_records" />
+            <item
+                android:id="@+id/create_training"
+                android:icon="@drawable/create"
+                android:title="@string/create_record" />
+            <item
+                android:id="@+id/carry_over"
+                android:icon="@drawable/ic_fast_forward"
+                android:title="@string/carry_over" />
+            <item
+                android:id="@+id/transactions"
+                android:icon="@drawable/transactions"
+                android:title="@string/my_transaction" />
+            <item
+                android:id="@+id/subscriptions"
+                android:icon="@drawable/subscriptions"
+                android:title="@string/my_subscription" />
+
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout" />
+    </group>
+
+
+</menu>

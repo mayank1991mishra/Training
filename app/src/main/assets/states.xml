@@ -1,0 +1,11 @@
+<states>
+  <state code='NSW' name='New South Wales'/>
+  <state code='QLD' name='Queensland'/>
+  <state code='SA' name='South Australia'/>
+  <state code='TAS' name='Tasmania'/>
+  <state code='VIC' name='Victoria'/>
+  <state code='WA' name='Western Australia'/>
+  <state code='ACT' name='Australian Capital Territory'/>
+  <state code='NT' name='Northern Territory'/>
+
+</states>

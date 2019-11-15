@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Training</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="ethics_professional_responsibility"><![CDATA[Ethics & Professional Responsibility]]></string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="e_mail_address">E-mail Address</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="street_number">Street number</string>
+    <string name="street_name">Street name</string>
+    <string name="post_code">Post Code</string>
+    <string name="state_enrolled">State Enrolled</string>
+    <string name="law_society_numer">Law Society Numer</string>
+    <string name="state">State</string>
+    <string name="please_wait">Please wait...</string>
+
+    ///////////////Toast///////////////////////
+
+    <string name="fname">Please enter the first name</string>
+    <string name="lname">Please enter the last name</string>
+    <string name="snumber">Please enter the street number</string>
+    <string name="sname">Please enter the street name</string>
+    <string name="postcode">Please enter the 4 digit postcode</string>
+    <string name="stateid">Please select the state id</string>
+    <string name="select_state">Please select the state</string>
+    <string name="state_enroll">Please select the state to enroll</string>
+    <string name="lsn">Please enter the law society number</string>
+    <string name="email">Please enter the correct email address</string>
+    <string name="mnumber">Please enter the 10 digit mobile number</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create">Create</string>
+    <string name="logout">Logout</string>
+    <string name="my_details">My Details</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_records">My Records</string>
+    <string name="my_transaction">My Transaction</string>
+    <string name="my_subscription">My Subscription</string>
+    <string name="australia">Australia</string>
+    <string name="create_record">Create New Record</string>
+    <string name="date">Date</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="activity">Activity</string>
+    <string name="sub_activity">Sub Activity</string>
+    <string name="year">Year</string>
+    <string name="edit">Edit</string>
+    <string name="details">Details</string>
+    <string name="delete">Delete</string>
+    <string name="edit_training">Edit Training</string>
+    <string name="training_details">Traning Details</string>
+    <string name="save">Save</string>
+    <string name="payment_date">Payment Date</string>
+    <string name="amount">Amount</string>
+    <string name="plan">Plan</string>
+    <string name="invoice">Invoice No.</string>
+    <string name="end_date">End Date</string>
+    <string name="start_date">Start Date</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="t_id">Transaction ID</string>
+    <string name="status">Status</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="rate_card">Rate Card</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="f_password">Forgot Password</string>
+    <string name="submit">Submit</string>
+    <string name="enter_password">Please enter you password, 8 characters long</string>
+    <string name="enter_frim">Please enter frim</string>
+    <string name="enter_sub">Please enter suburb</string>
+    <string name="one_year">One year \n subscription\n AUD 7.99</string>
+    <string name="two_year_subscription">Two year \n subscription\n AUD 14.99 </string>
+    <string name="plan_id">Plan ID</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="subscribe_now">Subscribe NOW</string>
+    <string name="choose_plan">Choose Plan</string>
+    <string name="add">Add</string>
+    <string name="download">Download</string>
+    <string name="send_email">Email</string>
+    <string name="days_remaining">Days remaining to complete your units</string>
+    <string name="units">Units</string>
+    <string name="provider">Provider</string>
+    <string name="carry_over">Carry Over</string>
+    <string name="select">Select</string>
+    <string name="suburb">Suburb</string>
+    <string name="firm">Firm</string>
+</resources>

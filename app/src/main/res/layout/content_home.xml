@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lexnarro.activity.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+    <TextView
+        android:padding="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_14"
+        android:id="@+id/txt_short_state"
+        android:layout_marginBottom="@dimen/dp_10"/>
+    <Spinner
+        android:layout_margin="@dimen/dp_10"
+        android:id="@+id/yearspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:layout_alignParentEnd="true"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_layout"
+        android:layout_below="@+id/txt_short_state"/>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        android:layout_above="@+id/txtstatus"/>
+    <TextView
+        android:id="@+id/txtstatus"
+        android:layout_above="@+id/tabs"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
+        android:padding="@dimen/dp_10"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TabLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:padding="@dimen/dp_1"
+        app:tabBackground="@drawable/backgroundselector"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@color/colorAccent" />
+
+</RelativeLayout>

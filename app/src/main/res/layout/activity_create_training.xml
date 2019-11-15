@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.lexnarro.activity.CreateTrainingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        style="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lexnarro.util.CenteredToolbar
+            android:id="@+id/userTrans_toolbar"
+            style="@style/ToolBarStyle.Event"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:nestedScrollingEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:text="@string/date"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/txtdate"
+                style="@style/edittextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/sp_10"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Category"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                style="@style/edittextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/grey_border"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/txt_category"
+                style="@style/edittextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/sp_10"
+                android:text="Legal Ethics and Professional Responsibility"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Activity"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <Spinner
+                android:id="@+id/activity_spinner"
+                style="@style/edittextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/grey_border"
+                android:spinnerMode="dropdown" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Sub Activity"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <Spinner
+                android:id="@+id/sub_activity_spinner"
+                style="@style/edittextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/grey_border"
+                android:spinnerMode="dropdown" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Hours"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/txt_hours"
+                style="@style/edittextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="3"
+                android:padding="@dimen/sp_10"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Provider"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/edt_provider"
+                style="@style/edittextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/sp_10"
+                android:textSize="@dimen/sp_14" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:text="Your Role"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <RadioGroup
+                    android:id="@+id/roles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/atd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/radio_color"
+                        android:text="Attendee"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/radio_color"
+                        android:text="Presenter"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/auth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/radio_color"
+                        android:text="Author"
+                        android:textColor="@android:color/white" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Description"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/edt_description"
+                style="@style/edittextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:maxLines="6"
+                android:minLines="5"
+                android:padding="@dimen/sp_10"
+                android:singleLine="false"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Upload Document"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/txt_file_name"
+                    style="@style/edittextstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="File Name"
+                    android:padding="@dimen/sp_10"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_5"
+                    android:layout_weight="4"
+                    android:contentDescription="@string/create"
+                    android:src="@drawable/upload" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_upload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:contentDescription="@string/create"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdf_upload"
+                android:nestedScrollingEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:contentDescription="@string/create"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btn_create"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:text="@string/create" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

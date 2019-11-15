@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.lexnarro.activity.TransactionDetailActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        style="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lexnarro.util.CenteredToolbar
+            android:id="@+id/userTrans_toolbar"
+            style="@style/ToolBarStyle.Event"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/first_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/plan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/amount"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/start_date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_s_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/end_date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_e_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/payment_status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_p_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/t_id"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_t_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/payment_date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_payment_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/invoice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/payment_method"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_p_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:text="@string/rate_card"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/txt_r_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:padding="@dimen/dp_5"
+                android:shadowColor="#95000000"
+                android:shadowDx="5"
+                android:shadowDy="7"
+                android:shadowRadius="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:padding="@dimen/dp_1"
+        app:tabBackground="@drawable/backgroundselector"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabMaxWidth="0dp"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@color/colorAccent" />
+
+
+</LinearLayout>
